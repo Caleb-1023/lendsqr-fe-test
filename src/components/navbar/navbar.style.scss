@@ -1,0 +1,58 @@
+.navbar-container {
+    max-width: 1500px;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        background: #fff;
+
+        .form-container {
+            width: 400px;
+            display: flex;
+            align-items: center;
+
+            .search-input {
+                width: 85%;
+                height: 40px;
+                border: rgba(33, 64, 125, 0.15) 1px solid;
+                border-right: 0;
+                border-radius: 8px 0 0 8px;
+                padding: 10px 20px;
+                font-size: 14px;
+                ::placeholder {
+                    color: #545F7D;
+                }
+                outline: none;
+            }
+
+            .search-btn {
+                width: 15%;
+                height: 40px;
+                border: none;
+                background: #39CDCC;
+                padding: 10px;
+                border-radius: 0 8px 8px 0;
+
+                :hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .nav-details {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            .nav-detail {
+                margin: 0 10px;
+            }
+
+            .profile-picture {
+                border-radius: 50%;
+            }
+        }
+    }
+}

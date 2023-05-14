@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "login-regular";
+    src: local('AvenirNextTPro-Regular'), url('../../fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: "login-italic";
+    src: local('AvenirNextTPro-It'), url('../../fonts/AvenirNextLTPro-It.otf') format('opentype');
+}
+@font-face {
+    font-family: "login-bold";
+    src: local('AvenirNextTPro-Bold'), url('../../fonts/AvenirNextLTPro-Bold.otf') format('opentype');
+}
+
+.login-page {
+    font-family: 'login-regular';
+    display: flex;
+    height: 100vh;
+    max-width: 1500px;
+    margin: auto;
+
+    .login-logo-container {
+        max-width: 1500px;
+        position: absolute;
+        top: 100px;
+        margin-left: 15px;
+        padding: 0 80px;
+
+        .login-logo {
+            width: 170px;
+        }
+    }
+
+    .login-illustrations {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        padding: 0 70px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        
+    }
+    
+    .login-container {
+        width: 50%;
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+
+        input, button {
+            display: block;
+        }
+
+        .login {
+            width: 100%;
+
+            .login-heading {
+                font-family: 'login-bold';
+                color: #213F7D;
+                margin-bottom: 15px;
+            }
+
+            .login-description {
+                color: #545F7D;
+                margin-bottom: 15px;
+            }
+
+            .login-form {
+                margin: 40px 0;
+
+                .login-input-container {
+                    display: flex;
+                    align-items: center;
+                    width: 80%;
+                    padding: 15px 13px;
+                    margin-bottom: 20px;
+                    border: rgba(84, 95, 125, 0.15) 2px solid;
+                    border-radius: 5px;
+
+                    .login-input {
+                        border: none;
+                        width: 100%;
+                        color: #545F7D;
+                        ::placeholder {
+                            color: #545F7D;
+                        }
+                        outline: none;
+                    }
+                }
+
+                .show-pwd-btn {
+                    font-size: 12px;
+                    color: #39CDCC;
+                    font-weight: 600;
+                    margin-right: 10px;
+                }
+
+                .forgot-password {
+                    border: 0;
+                    margin-bottom: 20px;
+                    background: #fff;
+                    color: #39CDCC;
+                    font-weight: 600;
+                }
+
+                .login-btn {
+                    width: 80%;
+                    padding: 14px 0;
+                    background: #39CDCC;
+                    color: #fff;
+                    font-weight: 600;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
